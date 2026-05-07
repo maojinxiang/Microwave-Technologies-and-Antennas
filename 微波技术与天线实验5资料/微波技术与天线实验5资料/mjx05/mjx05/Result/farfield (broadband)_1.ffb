@@ -1,0 +1,203 @@
+Version = 201708220 
+Nfiles = 22 
+First1D = 0 
+First2D = 1 
+// Buffer Files 
+ Buffer:
+farfield (broadband)_1_buffer1.ffp
+ Source:
+farfield (broadband)1D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.200000e+01 
+ Time  = 0.000000e+00 
+ Step  = 1.000000e+00 
+ Step2 = -1.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer2.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.230000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer3.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.260000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer4.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.290000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer5.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.320000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer6.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.350000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer7.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.380000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer8.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.410000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer9.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.440000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer10.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.470000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer11.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.500000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer12.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.530000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer13.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.560000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer14.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.590000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer15.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.620000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer16.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.650000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer17.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.680000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer18.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.710000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer19.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.740000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer20.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.770000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer21.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.800000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 
+ Buffer:
+farfield (broadband)_1_buffer22.ffp
+ Source:
+farfield (broadband)2D_1.ffp
+ IsTimeDomain = 0 
+ Frequency = 1.200000e+01 
+ Time  = 0.000000e+00 
+ Step  = 5.000000e+00 
+ Step2 = 5.000000e+00 

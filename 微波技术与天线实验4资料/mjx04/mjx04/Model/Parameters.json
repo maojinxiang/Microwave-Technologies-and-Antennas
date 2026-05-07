@@ -1,0 +1,30 @@
+{
+    "parameters": [
+        {
+            "expr": "0.46*lambda",
+            "name": "length",
+            "value": "46"
+        },
+        {
+            "expr": "100",
+            "name": "lambda",
+            "value": "100"
+        },
+        {
+            "expr": "length/200",
+            "name": "gap",
+            "value": "0.23"
+        },
+        {
+            "expr": "lambda/200",
+            "name": "dip_radius",
+            "value": "0.5"
+        },
+        {
+            "expr": "length/2-gap/2",
+            "name": "dip_length",
+            "value": "22.885"
+        }
+    ],
+    "version": 1
+}

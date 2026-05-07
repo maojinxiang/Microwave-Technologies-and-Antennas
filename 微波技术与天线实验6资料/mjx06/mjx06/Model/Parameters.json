@@ -1,0 +1,25 @@
+{
+    "parameters": [
+        {
+            "expr": "39.05",
+            "name": "L",
+            "value": "39.05"
+        },
+        {
+            "expr": "48.37",
+            "name": "W",
+            "value": "48.37"
+        },
+        {
+            "expr": "1.575",
+            "name": "H",
+            "value": "1.575"
+        },
+        {
+            "expr": "0.018",
+            "name": "T",
+            "value": "0.018"
+        }
+    ],
+    "version": 1
+}

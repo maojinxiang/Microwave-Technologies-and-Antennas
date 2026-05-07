@@ -1,0 +1,5 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE mjx01_lib mjx01_lib
+ASSIGN mjx01_lib libMode shared
+INCLUDE murata_lib_ads2011later_54et/lib.defs

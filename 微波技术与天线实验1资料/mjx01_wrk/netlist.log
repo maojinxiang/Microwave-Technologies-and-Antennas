@@ -1,0 +1,108 @@
+; Top Design: "mjx01_lib:student_2:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="mjx01_lib:student_2:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+LQG15HN:L1  N__1 0 PartNumber=5 
+Port:Term1  N__1 0 Num=1 Z=50 Ohm Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=yes GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=50 MHz Stop=10 GHz Step=100 MHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+
+#ifndef muRataLibWeb
+#define muRataLibWeb
+; models
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LQW18AN.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LQW15AN.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LQW04AN.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LQP15MN.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LQP03TN.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LQP03TG.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LQP03PN.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LQP02TQ.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LQP02TN.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LQG18HN.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LQG15HS.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LQG15HN.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LQG15HH.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LLR18.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LLL31.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LLL21.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LLL1U.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LLL18.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/LLL15.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRM55.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRM43.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRM42.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRM32.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRM31.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRM21.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRM18.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRM15.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRM03.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRM02.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRJ55.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRJ43.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRJ32.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRJ31.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GRJ21.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GR731.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GR721.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GR455.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GR443.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GR442.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GR355.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GR343.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GR332.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GR331.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GR321.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GQM22.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GQM21.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GQM18.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GJM15.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GJM03.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GJM02.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GJ832.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GJ831.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GJ821.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GJ431.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCM55.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCM43.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCM32.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCM31.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCM21.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCM18.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCM15.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCM03.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCJ55.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCJ43.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCJ32.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCJ31.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCJ21.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCD21.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GCD18.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GC355.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GC343.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GC332.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GC331.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GC321.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GA355.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GA352.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GA343.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GA342.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GA255.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GA243.net"
+#include "E:/RFexp/mjx01_wrk/murata_lib_ads2011later_54et/circuit/models/GA242.net"
+#endif
+
+
